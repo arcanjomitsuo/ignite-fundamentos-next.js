@@ -13,7 +13,7 @@ export function SignInVButton() {
       onClick={() => signOut()}
     >
       <FaGithub color="#04d261" />
-      Rodrigo Arcanjo
+      {session.user.name}
       <FiX color="#737380" className={styles.closeIcon} />
     </button>
   ) : (
